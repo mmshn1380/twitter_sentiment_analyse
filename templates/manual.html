@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Manual</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fab fa-twitter"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>jesus TWITTER&nbsp;</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar-1">
+                    <li class="nav-item"><a class="nav-link" href="home.html"><i class="fas fa-window-maximize"></i><span>Home</span></a></li>
+                </ul>
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link active" href="manual.html"><i class="fas fa-window-maximize"></i><span>Manual</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid">
+                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group"></div>
+                        </form>
+                    </div>
+                </nav>
+                <div style="margin-left: 2px;"><textarea id="manual_text" class="w-75 text-center" style="padding-left: 0px;margin-left: 28px;margin-right: 28px;padding-right: 5px;"></textarea><button class="btn btn-primary me-5 ms-5 ps-5 pe-5 text-center" type="button" onclick="evaluating()" style="padding-left: 70px;margin-left: 17px;margin-right: -14px;padding-right: 0px;">Predict</button></div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Jesus 2023</span></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}""./"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="{{ url_for('static',filename='js/search.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/theme.js')}}"></script>
+</body>
+
+</html>

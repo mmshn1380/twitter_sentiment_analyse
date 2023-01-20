@@ -1,4 +1,6 @@
-fastapi 
+flask
+flask_ngrok
+onnxruntime 
 uvicorn
 colabcode
 twython
