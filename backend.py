@@ -6,14 +6,14 @@ import onnxruntime as ort
 import numpy as np
 from twython import Twython
 
-APP_KEY='lqDhb6PKIRIdp0BgV2oVtw79b'
-ACCESS_TOKEN ='AAAAAAAAAAAAAAAAAAAAAOqnkwEAAAAAXR%2F%2B80S0B0QESggdwu2m16RcTqs%3DAbisOav2dl7qVvJ1nvnw2Y3YrYIzKzOwIMwddU8CjZROgZi749'
+APP_KEY='****'
+ACCESS_TOKEN ='***'
 twitter = Twython(APP_KEY, access_token=ACCESS_TOKEN)
 
 os.environ["FLASK_ENV"] = "development"
 app = Flask(__name__)
 port = 5000
-ngrok.set_auth_token("24EmoyeBAbVJAl3pIeX9st63D8U_4MMNXGTy1cY3sCVifrusi")
+ngrok.set_auth_token("****")
 public_url = ngrok.connect(port).public_url
 print(" * ngrok tunnel \"{}\" -> \"http://127.0.0.1:{}\"".format(public_url, port))
 app.config["BASE_URL"] = public_url
